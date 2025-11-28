@@ -10,7 +10,7 @@ module org.example.bankmanagementsystemjavasim {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
-
+    requires java.sql;
     opens org.example.bankmanagementsystemjavasim to javafx.fxml;
     exports org.example.bankmanagementsystemjavasim;
 }
