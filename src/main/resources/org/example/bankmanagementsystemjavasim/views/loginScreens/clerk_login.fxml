@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15.0" prefHeight="400.0" prefWidth="500.0"
+      style="-fx-background-color: #ffffff; -fx-border-color: #bdc3c7; -fx-border-radius: 15; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 20, 0, 0, 5);"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.bankmanagementsystemjavasim.controllers.ClerkLoginController">
+
+    <padding>
+        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+    </padding>
+
+    <Label text="Clerk / Employee Access" textFill="#34495e">
+        <font>
+            <Font name="Arial Bold" size="28.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="15.0" />
+        </VBox.margin>
+    </Label>
+
+    <TextField fx:id="usernameField" promptText="Employee ID or Username" prefHeight="45.0">
+        <style>
+            -fx-font-size: 14px;
+            -fx-border-color: #bdc3c7;
+            -fx-border-radius: 5;
+            -fx-background-radius: 5;
+        </style>
+    </TextField>
+
+    <PasswordField fx:id="passwordField" promptText="Password" prefHeight="45.0">
+        <style>
+            -fx-font-size: 14px;
+            -fx-border-color: #bdc3c7;
+            -fx-border-radius: 5;
+            -fx-background-radius: 5;
+        </style>
+    </PasswordField>
+
+    <Button text="Sign In" onAction="#handleLogin" prefHeight="45.0" prefWidth="250.0">
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+        <style>
+            -fx-background-color: #e74c3c;
+            -fx-text-fill: white;
+            -fx-font-size: 18px;
+            -fx-background-radius: 8;
+            -fx-cursor: hand;
+        </style>
+    </Button>
+
+    <Button text="Back" onAction="#handleBack" prefHeight="30.0" prefWidth="100.0">
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+        <style>
+            -fx-background-color: transparent;
+            -fx-text-fill: #7f8c8d;
+            -fx-cursor: hand;
+            -fx-border-color: transparent;
+        </style>
+    </Button>
+
+</VBox>

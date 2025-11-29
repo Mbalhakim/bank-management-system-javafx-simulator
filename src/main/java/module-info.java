@@ -11,6 +11,9 @@ module org.example.bankmanagementsystemjavasim {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires java.desktop;
     opens org.example.bankmanagementsystemjavasim to javafx.fxml;
     exports org.example.bankmanagementsystemjavasim;
+    opens org.example.bankmanagementsystemjavasim.controllers to javafx.fxml;
+    exports org.example.bankmanagementsystemjavasim.controllers;
 }
