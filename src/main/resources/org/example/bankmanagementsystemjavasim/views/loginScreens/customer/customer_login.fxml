@@ -16,7 +16,11 @@
     <padding>
         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
     </padding>
-
+    <Label fx:id="errorLabel" textFill="red">
+        <font>
+            <Font size="14"/>
+        </font>
+    </Label>
     <Label text="Customer Access" textFill="#34495e">
         <font>
             <Font name="Arial Bold" size="28.0" />
@@ -26,7 +30,7 @@
         </VBox.margin>
     </Label>
 
-    <TextField fx:id="usernameField" promptText="Account Number or Username" prefHeight="45.0">
+    <TextField fx:id="accountIdField" promptText="Account Number or Username" prefHeight="45.0">
         <style>
             -fx-font-size: 14px;
             -fx-border-color: #bdc3c7;
@@ -35,7 +39,7 @@
         </style>
     </TextField>
 
-    <PasswordField fx:id="passwordField" promptText="Password" prefHeight="45.0">
+    <PasswordField fx:id="pinField" promptText="Password" prefHeight="45.0">
         <style>
             -fx-font-size: 14px;
             -fx-border-color: #bdc3c7;
