@@ -1,4 +1,4 @@
-package org.example.bankmanagementsystemjavasim;
+package org.example.bankmanagementsystemjavasim.models;
 
 public class Clerk {
     private int clerkId;

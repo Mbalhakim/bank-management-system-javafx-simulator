@@ -16,4 +16,6 @@ module org.example.bankmanagementsystemjavasim {
     exports org.example.bankmanagementsystemjavasim;
     opens org.example.bankmanagementsystemjavasim.controllers to javafx.fxml;
     exports org.example.bankmanagementsystemjavasim.controllers;
+    exports org.example.bankmanagementsystemjavasim.models;
+    opens org.example.bankmanagementsystemjavasim.models to javafx.fxml;
 }
